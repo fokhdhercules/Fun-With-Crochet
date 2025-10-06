@@ -1,0 +1,371 @@
+:root {
+  /* Main */
+  --main-color: #1a1a1a;
+  --main-bg: #edfded;
+  --main-font: "Arial";
+
+  --heading-color: teal;
+}
+
+a {
+  display: inline-block;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+.clientProducts .series {
+  grid-template-columns: 1fr;
+  height: auto;
+  margin: 1rem auto;
+  width: 90%;
+  justify-items: center;
+  align-items: start;
+}
+
+.clientProducts .series .seriesItem {
+  margin: 1rem auto;
+  padding: clamp(10vh, 2rem, 20vh);
+  width: 90%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientProducts .series .seriesItemImage {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(25dvw, 1fr));
+  row-gap: clamp(5dvw, 10%, 5dvw);
+  column-gap: 3%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.clientProducts .series .seriesItemImage img {
+  min-width: 25dvw;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.clientProducts .series .seriesItemText {
+  margin: 1.5%;
+  width: auto;
+}
+
+.clientProducts .series .seriesItemText h2 {
+  width: 100%;
+  margin: 0 2.5%;
+  padding-left: 2%;
+}
+
+.clientProducts .series .seriesItemText p {
+  width: 90%;
+  margin: 1% 2.5%;
+  padding-left: 5%;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+.image1By1 img {
+  aspect-ratio: 1/1;
+}
+
+.image2By1 img {
+  aspect-ratio: 2/1;
+}
+
+.image1By2 img {
+  aspect-ratio: 1/2;
+}
+
+.image4By3 img {
+  aspect-ratio: 4/3;
+}
+
+.image3By4 img {
+  aspect-ratio: 3/4;
+}
+
+.image16By9 img {
+  aspect-ratio: 16/9;
+}
+
+.image9By16 img {
+  aspect-ratio: 9/16;
+}
+
+.clientProducts .series .image1By1,
+.clientProducts .series .image2By1,
+.clientProducts .series .image4By3,
+.clientProducts .series .image16By9 {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.clientProducts .series .image1By1 .seriesItemImage,
+.clientProducts .series .image2By1 .seriesItemImage,
+.clientProducts .series .image4By3 .seriesItemImage,
+.clientProducts .series .image16By9 .seriesItemImage {
+  width: 90dvw;
+  row-gap: 0.5em;
+  column-gap: clamp(1dvw, 1rem, 5dvw);
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.clientProducts .series .image1By1 .seriesItemImage img,
+.clientProducts .series .image2By1 .seriesItemImage img,
+.clientProducts .series .image4By3 .seriesItemImage img,
+.clientProducts .series .image16By9 .seriesItemImage img {
+  margin: 1rem clamp(1dvw, 1rem, 2.5dvw) 0;
+  width: 100%;
+}
+
+.clientProducts .series .image1By1 .seriesItemText,
+.clientProducts .series .image2By1 .seriesItemText,
+.clientProducts .series .image4By3 .seriesItemText,
+.clientProducts .series .image16By9 .seriesItemText {
+  width: 90%;
+}
+
+.clientProducts .series .image1By1 .seriesItemText p,
+.clientProducts .series .image2By1 .seriesItemText p,
+.clientProducts .series .image4By3 .seriesItemText p,
+.clientProducts .series .image16By9 .seriesItemText p {
+  width: 90%;
+}
+
+.clientProducts .series .oneLandscapeImage {
+  margin: 1rem auto;
+  padding: clamp(10vh, 2rem, 20vh);
+  width: 90%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientProducts .series .oneLandscapeImage .seriesItemImage {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(15px, 7rem, 40%), 1fr));
+  row-gap: 10%;
+  column-gap: 3%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.clientProducts .series .oneLandscapeImage .seriesItemImage img {
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.clientProducts .series .oneLandscapeImage .seriesItemText {
+  margin: 1.5%;
+  width: auto;
+}
+
+.clientProducts .series .oneLandscapeImage .seriesItemText p {
+  width: 90%;
+}
+
+#clothesItem,
+#christmasItem1,
+#christmasItem2,
+.hatItem,
+#totoroCupMatItem {
+  align-items: center;
+  justify-content: center;
+}
+
+#clothesItem .seriesItemImage,
+#christmasItem1 .seriesItemImage,
+#christmasItem2 .seriesItemImage,
+.hatItem .seriesItemImage,
+#totoroCupMatItem .seriesItemImage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+  width: 100%;
+  justify-self: center;
+}
+
+.hatItem .seriesItemImage {
+  grid-template-columns: 50% 50%;
+}
+
+#clothesItem .seriesItemImage img,
+#christmasItem1 .seriesItemImage img,
+#christmasItem2 .seriesItemImage img,
+.hatItem .seriesItemImage img,
+#totoroCupMatItem .seriesItemImage img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.hatItem .seriesItemImage img {
+  aspect-ratio: 3/4;
+}
+
+#christmasItem1 .seriesItemImage img {
+  aspect-ratio: 3/4;
+}
+
+#christmasItem2 .seriesItemImage img {
+  aspect-ratio: 1/2;
+}
+
+@media screen and (min-width: 901px) {
+
+  .clientProducts .series .image1By1 .seriesItemText p,
+  .clientProducts .series .image2By1 .seriesItemText p,
+  .clientProducts .series .image4By3 .seriesItemText p,
+  .clientProducts .series .image16By9 .seriesItemText p {
+    width: 90%;
+  }
+
+  .clientProducts .series .seriesItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 900px) {
+  .clientProducts .series .seriesItem {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .clientProducts .seriesItemText {
+    width: 90%;
+    font-size: 1rem;
+    margin: 0.5% 0;
+  }
+
+  .clientProducts p {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .clientProducts .series .oneLandscapeImage .seriesItemImage,
+  .clientProducts .series .image2By1 .seriesItemImage,
+  .clientProducts .series .image4By3 .seriesItemImage,
+  .clientProducts .series .image16By9 .seriesItemImage {
+    width: 90dvw;
+    display: grid;
+    row-gap: 1em;
+    column-gap: clamp(1dvw, 1rem, 5dvw);
+    margin: auto;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .clientProducts .series .image1By1 .seriesItemImage,
+  .clientProducts .series .image1By2 .seriesItemImage,
+  .clientProducts .series .image3By4 .seriesItemImage,
+  .clientProducts .series .image9By16 .seriesItemImage,
+  #clothesItem .seriesItemImage,
+  #christmasItem .seriesItemImage,
+  .hatItem .seriesItemImage,
+  #totoroCupMatItem .seriesItemImage {
+    width: 90dvw;
+    display: grid;
+    row-gap: 1em;
+    column-gap: clamp(1dvw, 1rem, 5dvw);
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #clothesItem .seriesItemImage,
+  #christmasItem .seriesItemImage,
+  .hatItem .seriesItemImage,
+  #totoroCupMatItem .seriesItemImage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .clientProducts .series .seriesItemImage img {
+    min-width: 20dvw;
+    width: 100%;
+  }
+
+  .clientProducts .series .oneLandscapeImage {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  .clientProducts .series .oneLandscapeImage .seriesItemImage img {
+    margin: 1rem clamp(1dvw, 1rem, 2.5dvw) 0;
+    width: 100%;
+  }
+
+  .clientProducts .series .oneLandscapeImage .seriesItemText {
+    width: 90%;
+  }
+
+  .clientProducts .series .oneLandscapeImage .seriesItemText p {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 2050px) {
+
+  p,
+  ul,
+  li {
+    font-size: 2dvw;
+  }
+
+  h1 {
+    font-size: 3.9dvw;
+  }
+
+  h2 {
+    font-size: 3.6dvw;
+  }
+
+  h3 {
+    font-size: 3.3dvw;
+  }
+}
+
+a {
+  display: inline-block;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  max-width: 80dvw;
+}

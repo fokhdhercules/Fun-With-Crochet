@@ -1,0 +1,87 @@
+:root {
+  /* Main */
+  --main-color: #1a1a1a;
+  --main-bg: #fdfded;
+  --main-font: "Arial";
+
+  --heading-color: teal;
+}
+
+.videoBox {
+  padding: 0;
+  margin: auto;
+  width: 80dvw;
+}
+
+.videoBox iframe {
+  display: block;
+  margin: auto;
+  width: clamp(15dvw, 40rem, 75dvw);
+  aspect-ratio: 16/9;
+}
+
+.threeDCrochetProducts {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(1%, 1fr));
+  height: 20rem;
+  margin: 0 5dvw;
+  align-items: center;
+  justify-content: center;
+}
+
+.threeDCrochetProducts .threeDCrochetProductImage {
+  margin: 0 1dvw;
+  padding: 0 clamp(1%, 2dvw, 10%);
+  height: inherit;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .threeDCrochetProducts {
+    grid-auto-flow: row;
+    grid-template-columns: 90%;
+    height: auto;
+  }
+}
+
+.threeDCrochetProducts .threeDCrochetProductImage img {
+  width: 100%;
+  height: auto;
+  max-height: 80%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.threeDCrochetProducts .threeDCrochetProductImage p {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+@media screen and (min-width: 2050px) {
+
+  p,
+  ul,
+  li {
+    font-size: 2dvw;
+  }
+
+  h1 {
+    font-size: 3.9dvw;
+  }
+
+  h2 {
+    font-size: 3.6dvw;
+  }
+
+  h3 {
+    font-size: 3.3dvw;
+  }
+}

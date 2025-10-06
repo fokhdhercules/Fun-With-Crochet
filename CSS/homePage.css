@@ -1,0 +1,158 @@
+:root {
+  /* Main */
+  --main-color: #1a1a1a;
+  --main-bg: #fdeded;
+  --main-font: "Arial";
+
+  /* Images */
+  --image-border: 0.1rem;
+  --image-border-color: #1a1a1a;
+
+  --heading-color: teal;
+}
+
+/* Images */
+
+.homePageIconList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePageIcon {
+  margin: 2rem 0;
+  font-size: clamp(0.25dvw, 3rem, 36px);
+  border-width: var(--image-border);
+  border-style: solid;
+  border-color: var(--image-border-color);
+  border-radius: 1rem;
+  height: clamp(0.01dvw, 40rem, 100dvw);
+  width: 90%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePageIconImage {
+  width: 100%;
+  height: 85%;
+  margin: 0;
+}
+
+.imageFileAnchor {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-position: bottom;
+}
+
+.homePageIconImage .imageFileAnchor .imageFile {
+  width: 125%;
+  height: 100%;
+  aspect-ratio: 3/5;
+  display: flex;
+  object-fit: cover;
+  object-position: top;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+}
+
+.imageSource {
+  margin: 0.2rem;
+  height: 10%;
+  padding: 2.5% 0;
+  text-align: center;
+  width: 95%;
+  margin: 2rem auto 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.1dvw, 1.5rem, min(3dvw, 3dvh));
+}
+
+.imageSource p {
+  text-align: center;
+}
+
+.imageSource a {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.homePageIconLink {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+  height: 20%;
+  width: 95%;
+  font-size: clamp(0.25dvw, 3rem, min(7.5dvw, 6dvh));
+  margin: 0;
+}
+
+.homePageIconLink a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 901px) {
+  .homePageIconList {
+    flex-direction: row;
+    margin: 2rem;
+    align-items: flex-start;
+  }
+
+  .homePageIcon {
+    width: 25%;
+    margin: 0;
+  }
+
+  .homePageIcon .homePageIconImage {
+    height: 80%;
+  }
+
+  .imageSource {
+    font-size: 1.5rem;
+  }
+
+  .homepageIconLink {
+    font-size: 0.75rem;
+    padding: 0 1rem;
+    height: 5%;
+  }
+}
+
+@media screen and (min-width: 2050px) {
+
+  p,
+  ul,
+  li {
+    font-size: 2dvw;
+  }
+
+  h1 {
+    font-size: 3.9dvw;
+  }
+
+  h2 {
+    font-size: 3.6dvw;
+  }
+
+  h3 {
+    font-size: 3.3dvw;
+  }
+}

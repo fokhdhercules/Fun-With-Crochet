@@ -1,0 +1,29 @@
+:root {
+  /* Main */
+  --main-color: #1a1a1a;
+  --main-bg: #ededfd;
+  --main-font: "Arial";
+
+  --heading-color: teal;
+}
+
+@media screen and (min-width: 2050px) {
+
+  p,
+  ul,
+  li {
+    font-size: 2dvw;
+  }
+
+  h1 {
+    font-size: 3.9dvw;
+  }
+
+  h2 {
+    font-size: 3.6dvw;
+  }
+
+  h3 {
+    font-size: 3.3dvw;
+  }
+}
